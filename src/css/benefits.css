@@ -1,0 +1,28 @@
+.benefitsh3 {
+    font-family: 'Inter Tight', sans-serif;
+    margin-bottom: 32px;
+}
+
+.benefitsUl {
+}
+
+.benefitsLi {
+    width: 332px;
+    height: 270px;
+    background-color: #242527;
+    border-radius: 20px;
+    margin-bottom: 16px;
+    padding: 24px;
+}
+
+.iconContainer {
+    width: 48px;
+    height: 48px;
+    background-color: #ED3B44;
+    border-radius: 10px;
+    margin-bottom: 64px;
+}
+
+.benefitsH4 {
+    margin-bottom: 8px;
+}
