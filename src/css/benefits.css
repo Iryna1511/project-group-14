@@ -1,0 +1,173 @@
+.heder_for_section_benefit {
+  font-size: 16px;
+  font-weight: 600;
+  color: rgba(250, 250, 250, 0.4);
+  margin-bottom: 32px;
+  text-transform: uppercase;
+}
+
+.section_benefits {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.wrapper_for_benefits {
+  margin: 0 auto;
+}
+
+.table_of_benefits {
+  margin-bottom: 32px;
+}
+
+.preference_cell {
+  width: 332px;
+  height: 270px;
+  background-color: #242527;
+  border-radius: 20px;
+  margin-bottom: 16px;
+  padding: 24px;
+}
+
+.container_for_icon {
+  width: 48px;
+  height: 48px;
+  background-color: #ed3b44;
+  border-radius: 10px;
+  margin-bottom: 64px;
+  display: flex;
+  align-items: center;
+}
+
+.heder_for_cell_benefit {
+  margin-bottom: 8px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.text_in_cell_benefits {
+  color: rgba(250, 250, 250, 0.6);
+}
+
+.svg_in_benefits {
+  margin: 0 auto;
+}
+
+#massages {
+  color: #ed3b44;
+}
+
+.wrapper_for_button_order {
+  display: flex;
+  justify-content: center;
+  margin-left: -120px;
+}
+
+.order_button {
+  border: 1px solid rgba(250, 250, 250, 0.2);
+  width: 198px;
+  height: 56px;
+  background-color: #242527;
+  border-radius: 60px;
+  color: #fafafa;
+  transition: border-color color 0.3s ease;
+}
+
+.link_for_order_button {
+  font-size: 16px;
+  font-weight: 500;
+  color: rgb(250, 250, 250);
+  width: 100%;
+}
+
+.order_button:hover {
+  border: 1px solid rgba(250, 250, 250, 0.9);
+}
+
+.order_button:hover a {
+  color: #ed3b44;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 374px) {
+  .preference_cell {
+    width: 90%;
+    height: 90%;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .wrapper_for_button_order {
+    display: block;
+    margin-left: 15px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1439px) {
+  .section_benefits {
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+
+    .table_of_benefits {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 16px;
+    margin-bottom: 64px;
+  }
+
+  .preference_cell {
+    width: calc(50% - 8px);
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  .wrapper_for_button_order {
+    display: block;
+    margin-left: 0px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .section_benefits {
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-top: 82px;
+    padding-bottom: 82px;
+  }
+
+  .wrapper_for_benefits {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .heder_for_section_benefit {
+    min-width: 50%;
+  }
+
+  .table_of_benefits {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .preference_cell {
+    width: calc(50% - 8px);
+    margin-bottom: 8px;
+    padding-bottom: 0;
+  }
+
+  .order_button {
+    margin-left: 50%;
+  }
+
+  .wrapper_for_button_order {
+    display: block;
+    margin-left: 0px;
+  }
+}
