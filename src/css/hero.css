@@ -1,0 +1,116 @@
+@media (min-width: 768px) {
+    .container {
+        min-width: 768px;
+    }
+}
+@media (min-width:768px){
+.hero {
+        background: url(../img/img_tablet/Hero.png);
+        background-size: cover;
+        background-position: center;
+        background-position: center;
+        background-position: center;
+        background-size: cover;
+    }
+}
+ @media (min-device-pixel-ratio: 2),
+ (min-resolution: 192dpi),
+ (min-resolution: 2dppx) {
+     .hero {
+         background-image: 
+             url(../img/img_tablet/Hero-2.png);
+     }
+ }
+   
+  
+@media(min-width: 768px) {
+    .main-content {
+        color: #fafafa;
+        font-weight: 500;
+        font-size: 90px;
+        letter-spacing: 0.03em;
+        line-height: 90px;
+        text-transform: capitalize;
+        padding-top: 300px;
+        padding-bottom: 243px;
+    }
+}
+@media(min-width:768px) {
+    .social-media-container {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        padding-right: 32px;
+        padding-bottom: 32px;
+    }
+
+@media(min-width:768px) {
+.social-links {
+        display: flex;
+        color: #fafafa;
+        gap: 8px;
+        font-size: 16px;
+        font-weight: 500;
+        margin-right: 8px;
+    }
+}
+
+@media(min-width:768px) {
+    .social-media-list a {
+            display: block;
+            text-decoration: none;
+            padding: 18px 16px;
+            border-radius: 60px;
+            width: 55px;
+            height: 55px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            text-align: center;
+            line-height: 19px;
+        }
+}
+
+@media(min-width:768px) {
+    .email-link {
+            color: #fafafa;
+            text-decoration: none;
+            font-weight: 500;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            width: 223px;
+            height: 55px;
+            border-radius: 60px;
+            padding: 18px 24px;
+            line-height: 19px;
+        }
+    }
+}
+
+
+  
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 1440px) {
+    .container {
+        min-width: 1440x;
+    }
+}
+@media (min-width: 1440px) {
+    .header-navigation {
+        width: 1376px;
+        padding: 32px;
+        gap: 487px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+
+
