@@ -20,15 +20,22 @@
   }
 }
 
-.marquee {
+.marquee__inner {
+  height: 200px;
+  display: flex;
+  transform: rotate(16deg);
+  margin-bottom: 32px;
+}
+
+/* .marquee {
   position: absolute;
-  right: -800px;
+  right: 0;
   left: 0;
   overflow: hidden;
 }
 
 .marquee__inner {
-  /* height: 508px; */
+ height: 508px;
   display: flex;
   transform: rotate(16deg);
 }
@@ -56,4 +63,4 @@
   to {
     transform: translateX(-180%);
   }
-}
+} */
