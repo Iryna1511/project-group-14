@@ -1,4 +1,4 @@
-import { fetchReviews } from './api';
+import { fetchReviews } from './portfolio-api';
 import { reviewNotFound, renderReviews } from './render-review';
 import { BUTTON_NEXT, BUTTON_PREV, swiper } from './review-swiper';
 

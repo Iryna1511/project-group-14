@@ -1,0 +1,59 @@
+.covers.section {
+  padding-left: 0;
+  padding-right: 0;
+}
+.covers-box {
+  position: relative;
+  height: 508px;
+
+  background-image: url(../img/under-faq/covers_mobile.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+@media screen and (min-resolution: 192dpi) and (max-width: 767px),
+  screen and (min-resolution: 2dppx) and (max-width: 767px),
+  screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
+  .covers-box {
+    background-image: url(../img/under-faq/covers_mobile@2x.png);
+  }
+}
+
+.marquee {
+  position: absolute;
+  right: -800px;
+  left: 0;
+  overflow: hidden;
+}
+
+.marquee__inner {
+  /* height: 508px; */
+  display: flex;
+  transform: rotate(16deg);
+}
+
+.marquee__line {
+  flex-shrink: 0;
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: calc(100% / 10);
+  height: 200px;
+  white-space: nowrap;
+  animation-name: marqueeLine;
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+@keyframes marqueeLine {
+  from {
+    transform: translateX(-20%);
+  }
+
+  to {
+    transform: translateX(-180%);
+  }
+}
