@@ -1,18 +1,16 @@
 .benefitsh3 {
-    font-family: 'Inter Tight', sans-serif;
-    font-size: 16px;
-    font-weight: 600;
-    letter-spacing: -0.02em;
-    color: rgba(250, 250, 250, 0.4);
-    margin-bottom: 32px;
+  font-family: 'Inter Tight', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  color: rgba(250, 250, 250, 0.4);
+  margin-bottom: 32px;
 }
 
 .benefitsSection {
-    display: flex;
-    flex-direction: column;
-    display: flex;
-    justify-content: center;
-
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .benefitsDiv {
@@ -20,90 +18,149 @@
 }
 
 .benefitsUl {
-    margin-bottom: 32px;
+  margin-bottom: 32px;
 }
 
 .benefitsLi {
-    width: 332px;
-    height: 270px;
-    background-color: #242527;
-    border-radius: 20px;
-    margin-bottom: 16px;
-    padding: 24px;
+  width: 332px;
+  height: 270px;
+  background-color: #242527;
+  border-radius: 20px;
+  margin-bottom: 16px;
+  padding: 24px;
 }
 
 .iconContainer {
-    width: 48px;
-    height: 48px;
-    background-color: #ED3B44;
-    border-radius: 10px;
-    margin-bottom: 64px;
-    display: flex;
-    align-items: center;
+  width: 48px;
+  height: 48px;
+  background-color: #ed3b44;
+  border-radius: 10px;
+  margin-bottom: 64px;
+  display: flex;
+  align-items: center;
 }
 
 .benefitsH4 {
-    margin-bottom: 8px;
-    font-family: 'Inter Tight', sans-serif;
-    font-size: 20px;
-    font-weight: 600;
-    letter-spacing: -0.02em;
-    color: rgb(250, 250, 250);
+  margin-bottom: 8px;
+  font-family: 'Inter Tight', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  color: rgb(250, 250, 250);
 }
 
 .benefitsP {
-    font-family: 'Inter Tight', sans-serif;
-    font-size: 16px;
-    font-weight: 500;
-    letter-spacing: -0.02em;
-    color: rgba(250, 250, 250, 0.6);
+  font-family: 'Inter Tight', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  color: rgba(250, 250, 250, 0.6);
 }
 
 .benefitsSvg {
-    margin: 0 auto;
+  margin: 0 auto;
 }
 
 #massages {
-    color: #ED3B44;
+  color: #ed3b44;
+}
+
+.divForButton {
+    display: flex;
+    justify-content: center;
+    margin-left: -120px;
 }
 
 .benefitsButton {
-    border: 1px solid #FAFAFA;
-    width: 198px;
-    height: 56px;
-    opacity: 0,2;
-    background-color: #242527;
-    border-radius: 60px;
-    color: #FAFAFA;
+  border: 1px solid rgba(250, 250, 250, 0.2);
+  width: 198px;
+  height: 56px;
+  background-color: #242527;
+  border-radius: 60px;
+  color: #fafafa;
+  transition: border-color color 0.3s ease;
 }
 
 .benefitsA {
-    font-family: 'Inter Tight', sans-serif;
-        font-size: 16px;
-        font-weight: 500;
-        letter-spacing: -0.02em;
-        color: rgb(250, 250, 250);
+  font-family: 'Inter Tight', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  color: rgb(250, 250, 250);
+  width: 100%;
 }
 
+.benefitsButton:hover {
+    border: 1px solid rgba(250, 250, 250, 0.9);
+}
 
-@media only screen and (min-width: 320px) {
-    .benefitsLi {
+.benefitsButton:hover a {
+    color: aqua;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 374px) {
+  .benefitsLi {
     width: 90%;
     height: 90%;
     max-width: 100%;
     margin-left: auto;
     margin-right: auto;
-    }
+  }
+
+  .divForButton {
+      display: block;
+      margin-left: 15px;
+  }
 }
 
-@media only screen and (min-width: 375px) {
+@media only screen and (min-width: 768px) and (max-width: 1439px) {
+  .benefitsUl {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 16px;
+    margin-bottom: 64px;
+  }
 
-}
+  .benefitsLi {
+    width: calc(50% - 8px);
+    margin-bottom: 8px;
+  }
 
-@media only screen and (min-width: 768px) {
-   
+  .divForButton {
+      display: block;
+      margin-left: 0px;
+  }
 }
 
 @media only screen and (min-width: 1440px) {
-   
+  .benefitsDiv {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .benefitsh3 {
+    min-width: 50%;
+  }
+
+  .benefitsUl {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .benefitsLi {
+    width: calc(50% - 8px);
+    margin-bottom: 8px;
+  }
+
+  .benefitsButton {
+    margin-left: 50%;
+  }
+
+  .divForButton {
+      display: block;
+      margin-left: 0px;
+  }
 }
