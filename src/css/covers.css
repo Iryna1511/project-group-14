@@ -5,6 +5,7 @@
 .covers-box {
   position: relative;
   height: 508px;
+  overflow: hidden;
 
   background-image: url(../img/under-faq/covers_mobile.png);
   background-repeat: no-repeat;
@@ -12,42 +13,31 @@
   background-size: cover;
 }
 
-@media screen and (min-resolution: 192dpi) and (max-width: 767px),
-  screen and (min-resolution: 2dppx) and (max-width: 767px),
-  screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
-  .covers-box {
-    background-image: url(../img/under-faq/covers_mobile@2x.png);
-  }
-}
-
-.marquee__inner {
-  height: 200px;
-  display: flex;
-  transform: rotate(16deg);
-  margin-bottom: 32px;
-}
-
-/* .marquee {
+.marquee {
   position: absolute;
-  right: 0;
-  left: 0;
-  overflow: hidden;
+  right: -1325px;
+  top: -15px;
 }
 
 .marquee__inner {
- height: 508px;
   display: flex;
   transform: rotate(16deg);
 }
 
-.marquee__line {
-  flex-shrink: 0;
-  margin-right: 10px;
+.marquee-line {
+  width: 283px;
+  height: 163px;
+  margin-right: 16px;
+  margin-bottom: 32px;
+
   display: flex;
   align-items: center;
   justify-content: center;
-  width: calc(100% / 10);
-  height: 200px;
+  white-space: nowrap;
+}
+/* .animation   */
+.marquee__line {
+  flex-shrink: 0;
   white-space: nowrap;
   animation-name: marqueeLine;
   animation-duration: 5s;
@@ -63,4 +53,60 @@
   to {
     transform: translateX(-180%);
   }
-} */
+}
+
+@media screen and (min-resolution: 192dpi) and (max-width: 767px),
+  screen and (min-resolution: 2dppx) and (max-width: 767px),
+  screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
+  .covers-box {
+    background-image: url(../img/under-faq/covers_mobile@2x.png);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .covers-box {
+    background-image: url(../img/under-faq/covers_tablet.png);
+    height: 960px;
+  }
+
+  .marquee-line {
+    width: 544px;
+    height: 314px;
+    margin-right: 16px;
+    margin-bottom: 32px;
+  }
+
+  .marquee {
+    right: -1325px;
+    top: -290px;
+  }
+}
+
+@media screen and (min-resolution: 192dpi) and (min-width: 768px),
+  screen and (min-resolution: 2dppx) and (min-width: 768px),
+  screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
+  .covers-box {
+    background-image: url(../img/under-faq/covers_tablet@2x.png);
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .covers-box {
+    background-image: url(../img/under-faq/covers_desctop.png);
+  }
+
+  .marquee-line {
+    width: 544px;
+    height: 314px;
+    margin-right: 36px;
+    margin-bottom: 48px;
+  }
+}
+
+@media screen and (min-resolution: 192dpi) and (min-width: 1440px),
+  screen and (min-resolution: 2dppx) and (min-width: 1440px),
+  screen and (min-device-pixel-ratio: 2) and (min-width: 1440px) {
+  .covers-box {
+    background-image: url(../img/under-faq/covers_desctop@2x.png);
+  }
+}
