@@ -1,0 +1,112 @@
+.covers.section {
+  padding-left: 0;
+  padding-right: 0;
+}
+.covers-box {
+  position: relative;
+  height: 508px;
+  overflow: hidden;
+
+  background-image: url(../img/under-faq/covers_mobile.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.marquee {
+  position: absolute;
+  right: -1325px;
+  top: -15px;
+}
+
+.marquee__inner {
+  display: flex;
+  transform: rotate(16deg);
+}
+
+.marquee-line {
+  width: 283px;
+  height: 163px;
+  margin-right: 16px;
+  margin-bottom: 32px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+}
+/* .animation   */
+.marquee__line {
+  flex-shrink: 0;
+  white-space: nowrap;
+  animation-name: marqueeLine;
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+@keyframes marqueeLine {
+  from {
+    transform: translateX(-20%);
+  }
+
+  to {
+    transform: translateX(-180%);
+  }
+}
+
+@media screen and (min-resolution: 192dpi) and (max-width: 767px),
+  screen and (min-resolution: 2dppx) and (max-width: 767px),
+  screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
+  .covers-box {
+    background-image: url(../img/under-faq/covers_mobile@2x.png);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .covers-box {
+    background-image: url(../img/under-faq/covers_tablet.png);
+    height: 960px;
+  }
+
+  .marquee-line {
+    width: 544px;
+    height: 314px;
+    margin-right: 16px;
+    margin-bottom: 32px;
+  }
+
+  .marquee {
+    right: -1325px;
+    top: -290px;
+  }
+}
+
+@media screen and (min-resolution: 192dpi) and (min-width: 768px),
+  screen and (min-resolution: 2dppx) and (min-width: 768px),
+  screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
+  .covers-box {
+    background-image: url(../img/under-faq/covers_tablet@2x.png);
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .covers-box {
+    background-image: url(../img/under-faq/covers_desctop.png);
+  }
+
+  .marquee-line {
+    width: 544px;
+    height: 314px;
+    margin-right: 36px;
+    margin-bottom: 48px;
+  }
+}
+
+@media screen and (min-resolution: 192dpi) and (min-width: 1440px),
+  screen and (min-resolution: 2dppx) and (min-width: 1440px),
+  screen and (min-device-pixel-ratio: 2) and (min-width: 1440px) {
+  .covers-box {
+    background-image: url(../img/under-faq/covers_desctop@2x.png);
+  }
+}
