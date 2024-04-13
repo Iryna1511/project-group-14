@@ -41,10 +41,24 @@
         <img src="../img/about/main_image_desctop.png" alt="my-photo" />
       </picture>
     </div>
-    <ul class="about-list">
-      <li class="list-item-about">
-        <h3 class="list-header-about">ABOUT ME</h3>
-        <p class="about-item-text">
+    <ul class="about-list accordion-container">
+      <li class="list-item-about ac">
+        <!-- <div class=""> -->
+        <h3 class="list-header-about accordeon">
+          ABOUT ME
+          <button class="button-up ac-trigger" type="button">
+            <svg class="arrow-accordeon" width="40" height="40">
+              <use xlink:href="./svg/icons.svg#button-up" />
+            </svg>
+          </button>
+          <button class="button-down visually-hidden" type="button">
+            <svg class="arrow-accordeon" width="24" height="24">
+              <use xlink:href="./svg/icons.svg#button-down" />
+            </svg>
+          </button>
+        </h3>
+        <!-- </div> -->
+        <p class="about-item-text ac-panel">
           I am Lloyd Jefferson, a talented programmer with extensive expertise
           in software development. I have an understanding of different
           programming languages ​​and technologies, always ready to improve my
@@ -65,14 +79,28 @@
           allow me to create efficient and scalable software.
         </p>
       </li>
-      <li class="about-list">
-        <h3 class="list-header-about">ROLE</h3>
+      <li class="list-item-about">
+        <div class="accordeon">
+          <h3 class="list-header-about">ROLE</h3>
+          <button class="button-up" type="button">
+            <svg class="arrow-accordeon" width="40" height="40">
+              <use xlink:href="./svg/icons.svg#button-up" />
+            </svg>
+          </button>
+        </div>
         <p class="about-item-text">
           Frontend development HeadlessCMS,Wordpress Blender(enjoy)
         </p>
       </li>
-      <li class="about-list">
-        <h3 class="list-header-about">EDUCATION</h3>
+      <li class="list-item-about">
+        <div class="accordeon">
+          <h3 class="list-header-about">EDUCATION</h3>
+          <button class="button-up" type="button">
+            <svg class="arrow-accordeon" width="40" height="40">
+              <use xlink:href="./svg/icons.svg#button-up" />
+            </svg>
+          </button>
+        </div>
         <p class="about-item-text">
           2018 - 2019 / Frontend Development Diploma, GoIT IT School, New York
           2019 - 2020 / Advanced Web Development Certificate, GoIT IT School,
