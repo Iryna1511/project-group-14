@@ -5,11 +5,17 @@
     margin-bottom: 32px;
 }
 
-.swiper {
+.swiper-box {
+    display: flex;
+    justify-content: space-between;
     max-width: 343px;
+    width: 100%;
     height: 812px;
     border-radius: 24px;
     background: #242527;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
 }
 
 .white-part {
@@ -98,6 +104,35 @@
     margin-right: auto;
 }
 
+
+.btn-prev,
+.btn-next{
+    background-color: transparent;
+    width: 52px;
+    height: 52px;
+    border-radius: 60px;
+    border: 1px solid rgb(250, 250, 250, 50%);
+    background-size: 24px 24px;
+    
+}
+
+
+.arrow-swiper{
+    stroke: rgb(250, 250, 250, 100%);
+    fill: transparent;
+}
+.swiper-btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 32px;
+    gap: 12px;
+
+}
+
+
+
+
 @media screen and (min-width: 768px) {
 
     .white-part {
@@ -125,7 +160,7 @@
             margin-right: auto;
         }
 
-       .swiper {
+       .swiper-box {
                     max-width: 704px;
                     height: 1191px;
                     
@@ -133,7 +168,7 @@
     }
 
 @media screen and (min-width: 1440px) {
-    .swiper {
+    .swiper-box {
             border-radius: 24px;
             max-width: 1376px;
             height: 625px;
@@ -152,8 +187,18 @@
             width: 177px;
             height: 55px;
                     }
-    .desctop{
+    
+        .img-slide {
+            display: block;
+            max-width: 614px;
+            height: 385px;
+            margin-top: 0px;
+            margin-bottom: 0px;
+            margin: 0px;
+            
+        }
+        .desctop {
+        flex-shrink: 0;
         display: flex;
     }
-
         }
