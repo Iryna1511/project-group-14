@@ -15,7 +15,7 @@
   overflow: hidden;
 }
 
-.swiper-slide {
+.swiper-slide.swiper-slide-active {
   display: flex;
   flex-direction: column;
 }
@@ -173,7 +173,7 @@
     margin-left: auto;
     margin-right: auto;
   }
-  .swiper-slide {
-    flex-direction: row;
+  .swiper-slide.swiper-slide-active {
+    flex-direction: row !important;
   }
 }
