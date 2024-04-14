@@ -42,12 +42,6 @@
 
 }
 
-@media screen and (min-width: 374px) {
-    .container {
-
-    }
-}
-
 @media screen and (min-width: 768px) {
     .footer-main-section {
         padding-top: 85px;
@@ -112,15 +106,15 @@
     background-color: rgb(224, 55, 63);
 }
 
-@media screen and (min-width: 374px) {
-    .container {}
-}
-
 @media screen and (min-width: 768px) {
     .footer-form {
         flex-direction: row;
         gap: 32px;
         align-items: center;
+    }
+
+    .footer-form input {
+        width: 245px;
     }
 
     #form-comment {
@@ -136,6 +130,10 @@
 }
 
 @media screen and (min-width: 1440px) {
+    .footer-form input {
+        width: 390px;
+    }
+    
     #form-comment {
         margin-right: 86px;
     }
@@ -156,10 +154,6 @@
     font-weight: 500;
     line-height: 1.21;
     text-align: left;
-}
-
-@media screen and (min-width: 374px) {
-    .container {}
 }
 
 @media screen and (min-width: 768px) {
