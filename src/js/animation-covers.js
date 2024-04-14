@@ -1,14 +1,15 @@
-const containerForCovers = document.getElementById('animation');
+export const containerForCovers = document.getElementById('animation');
 
-function isInViewport(containerForCovers) {
+export function isInViewport(containerForCovers) {
   let rect = containerForCovers.getBoundingClientRect();
+  console.log(123);
   return (
     (rect.top >= 0 && rect.bottom <= window.innerHeight) ||
     (rect.bottom >= 0 && rect.top <= window.innerHeight)
   );
 }
 
-function animateCovers() {
+export function animateCovers() {
   let coversSection = document.querySelector('.covers.section');
   let marqueeLines = coversSection.querySelectorAll('.marquee-line');
 
