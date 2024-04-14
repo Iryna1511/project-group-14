@@ -1,0 +1,112 @@
+.container {
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.swiper-hero {
+    overflow: clip;
+}
+
+.lock {
+    overflow: hidden;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.dark {
+    color: rgba(250, 250, 250, 0.6);
+    background-color: #1c1d20;
+}
+
+.light {
+    color: var(--hard-black-color);
+    background-color: var(--white-color);
+}
+
+@media screen and (max-width: 374.98px) {
+    .container {
+        max-width: 375px;
+    }
+}
+
+@media screen and (min-width: 375px) {
+    .container {
+        max-width: 375px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 768px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .container {
+        max-width: 1440px;
+    }
+}
+
+.scroll-to-up {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: 20px;
+    position: fixed;
+    bottom: 150px;
+    right: 10px;
+    z-index: 2000;
+}
+
+body.dark .scroll-to-up {}
+
+body.light .scroll-to-up {
+    color: #7b7777;
+}
+
+.icon {
+    display: inline-block;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: currentColor;
+}
+
+.animate-scroll {
+    animation-name: scaleScroll;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes scaleScroll {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.5);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.screen-blocked {
+    overflow: hidden;
+}

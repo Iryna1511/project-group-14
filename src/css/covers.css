@@ -1,6 +1,9 @@
 .covers.section {
   padding-left: 0;
   padding-right: 0;
+  margin-left: 0;
+  margin-right: 0;
+  max-width: 100%;
 }
 .covers-box {
   position: relative;
@@ -11,33 +14,32 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  max-width: 100%;
 }
 
 .marquee {
   position: absolute;
   right: -1325px;
-  top: -15px;
+  left: -100px;
+  top: 65px;
 }
 
 .marquee__inner {
+  height: auto;
   display: flex;
   transform: rotate(16deg);
+  gap: 17px;
 }
 
 .marquee-line {
-  width: 283px;
+  width: 282px;
   height: 163px;
-  margin-right: 16px;
-  margin-bottom: 32px;
-
+  margin-top: 40px;
+  flex-shrink: 0;
+  margin-right: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
-  white-space: nowrap;
-}
-/* .animation   */
-.marquee__line {
-  flex-shrink: 0;
   white-space: nowrap;
   animation-name: marqueeLine;
   animation-duration: 5s;
@@ -72,13 +74,14 @@
   .marquee-line {
     width: 544px;
     height: 314px;
-    margin-right: 16px;
-    margin-bottom: 32px;
+    padding-right: 10px;
+    margin-top: 40px;
   }
 
   .marquee {
-    right: -1325px;
-    top: -290px;
+    right: -2000px;
+    top: 180px;
+    left: -100px;
   }
 }
 
@@ -95,11 +98,16 @@
     background-image: url(../img/under-faq/covers_desctop.png);
   }
 
+  .marquee {
+    right: -1325px;
+    top: -200px;
+    left: -100px;
+  }
+
   .marquee-line {
     width: 544px;
     height: 314px;
-    margin-right: 36px;
-    margin-bottom: 48px;
+
   }
 }
 
