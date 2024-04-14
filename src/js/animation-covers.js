@@ -14,9 +14,9 @@ function animateCovers() {
 
   marqueeLines.forEach(function (line) {
     if (isInViewport(coversSection)) {
-      line.classList.add('marquee-line-animation'); // Додати клас анімації
+      line.classList.add('marquee-line-animation');
     } else {
-      line.classList.remove('marquee-line-animation'); // Видалити клас анімації
+      line.classList.remove('marquee-line-animation');
     }
   });
 }
