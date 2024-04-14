@@ -55,11 +55,23 @@
 .about-item-text:not(:last-child) {
   margin-bottom: 32px;
 }
-.skills-list {
-  display: flex;
+/* .about-skills {
+   display: flex;
   justify-content: flex-start;
   align-items: center;
   flex-direction: row;
+  padding: 0px;
+  margin-top: auto;
+  margin-left: auto;
+} */
+.skills-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  padding: 0px;
+  margin-top: auto;
+  margin-left: auto;
 }
 .skills-item {
   display: flex;
@@ -79,12 +91,6 @@
 }
 .skills-item:hover {
   background-color: rgb(237, 59, 68);
-}
-
-@media screen and (min-width: 768px) {
-  .about-text {
-    padding: 64px 64px 436px 64px;
-  }
 }
 
 .button-up {
@@ -107,7 +113,74 @@
   justify-content: space-between;
   align-items: center;
 }
+@media screen and (min-width: 768px) {
+  .about-text {
+    padding: 64px 64px 436px 64px;
+    font-size: 38px;
+    line-height: 40px;
+  }
+  .thumb {
+    max-width: 704px;
+    height: 700px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .skills-item {
+    width: 200px;
+    height: 200px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .about-text {
+    padding: 64px 64px 396px 64px;
+    max-width: 680px;
+    height: 700px;
+  }
+  .about-text-container {
+    display: flex;
+    flex-direction: row;
+  }
+  .thumb {
+    max-width: 680px;
+    height: 700px;
+  }
+  .list-item-about {
+    display: flex;
+    flex-direction: row;
+  }
+  .about-item-text {
+    box-sizing: border-box;
+    width: 612px;
+    height: 368px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-left: auto;
+    margin-top: auto;
+  }
 
+  .about-me-item {
+    width: 612px;
+    height: 368px;
+    padding-left: 696px;
+    padding-right: 68px;
+    padding-top: 48px;
+    padding-bottom: -16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 32px;
+  }
+
+  .profession {
+    margin: 10px 0px;
+  }
+}
 /* align-items: center;
     text-align: center;
   }

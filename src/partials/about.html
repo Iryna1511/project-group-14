@@ -12,41 +12,36 @@
       <picture class="thumb">
         <source
           srcset="
-            ../img/about/main_image_desctop.png    1x,
-            ../img/about/main_image_desctop@2x.png 2x
+            ./img/about/main_image_desctop.png    1x,
+            ./img/about/main_image_desctop@2x.png 2x
           "
           media="(min-width:1440px)"
         />
         <source
           srcset="
-            ../img/about/main_image_desctop.png    1x,
-            ../img/about/main_image_desctop@2x.png 2x
-          "
-          media="(min-width:1280px)"
-        />
-        <source
-          srcset="
-            ../img/about/main_image_tablet.png    1x,
-            ../img/about/main_image_tablet@2x.png 2x
+            ./img/about/main_image_tablet.png    1x,
+            ./img/about/main_image_tablet@2x.png 2x
           "
           media="(min-width:768px)"
         />
         <source
           srcset="
-            ../img/about/main_image_mobile.png    1x,
-            ../img/about/main_image_mobile@2x.png 2x
+            ./img/about/main_image_mobile.png    1x,
+            ./img/about/main_image_mobile@2x.png 2x
           "
           media="(max-width:767px)"
         />
-        <img src="../img/about/main_image_desctop.png" alt="my-photo" />
+        <img
+          src="./img/about/main_image_desctop.png"
+          alt="main_image_desctop"
+        />
       </picture>
     </div>
     <ul class="about-list accordion-container">
       <li class="list-item-about ac">
-        <!-- <div class=""> -->
         <h3 class="list-header-about accordeon">
           ABOUT ME
-          <button class="button-up ac-trigger" type="button">
+          <button class="button-up" type="button">
             <svg class="arrow-accordeon" width="40" height="40">
               <use xlink:href="./svg/icons.svg#button-up" />
             </svg>
@@ -57,29 +52,31 @@
             </svg>
           </button>
         </h3>
-        <!-- </div> -->
-        <p class="about-item-text ac-panel">
-          I am Lloyd Jefferson, a talented programmer with extensive expertise
-          in software development. I have an understanding of different
-          programming languages ​​and technologies, always ready to improve my
-          skills. I always follow the latest trends and look for unconventional,
-          creative solutions to problems. I have a high level of analytical
-          skills and am able to effectively solve even the most difficult tasks
-          encountered on the way.
-        </p>
-        <p class="about-item-text">
-          Able to work both independently and in a team. I can effectively
-          cooperate with colleagues, exchanging ideas and finding optimal
-          solutions. Professional maturity allows you to calmly cope with
-          challenges and stressful situations, while maintaining a high quality
-          of work. I am always looking for opportunities for self-improvement. I
-          actively study new technologies and practices to stay abreast of the
-          latest innovations. I have a strong understanding of various
-          programming languages, frameworks and architectural concepts that
-          allow me to create efficient and scalable software.
-        </p>
+        <div class="about-me-item about-item-text">
+          <p>
+            I am Lloyd Jefferson, a talented programmer with extensive expertise
+            in software development. I have an understanding of different
+            programming languages ​​and technologies, always ready to improve my
+            skills. I always follow the latest trends and look for
+            unconventional, creative solutions to problems. I have a high level
+            of analytical skills and am able to effectively solve even the most
+            difficult tasks encountered on the way.
+          </p>
+          <p>
+            Able to work both independently and in a team. I can effectively
+            cooperate with colleagues, exchanging ideas and finding optimal
+            solutions. Professional maturity allows you to calmly cope with
+            challenges and stressful situations, while maintaining a high
+            quality of work. I am always looking for opportunities for
+            self-improvement. I actively study new technologies and practices to
+            stay abreast of the latest innovations. I have a strong
+            understanding of various programming languages, frameworks and
+            architectural concepts that allow me to create efficient and
+            scalable software.
+          </p>
+        </div>
       </li>
-      <li class="list-item-about">
+      <li class="list-item-about about-role">
         <div class="accordeon">
           <h3 class="list-header-about">ROLE</h3>
           <button class="button-up" type="button">
@@ -89,10 +86,12 @@
           </button>
         </div>
         <p class="about-item-text">
-          Frontend development HeadlessCMS,Wordpress Blender(enjoy)
+          <span class="profession">Frontend development</span>
+          <span class="profession">HeadlessCMS,Wordpress</span>
+          <span class="profession">Blender(enjoy)</span>
         </p>
       </li>
-      <li class="list-item-about">
+      <li class="list-item-about about-education">
         <div class="accordeon">
           <h3 class="list-header-about">EDUCATION</h3>
           <button class="button-up" type="button">
@@ -102,9 +101,18 @@
           </button>
         </div>
         <p class="about-item-text">
-          2018 - 2019 / Frontend Development Diploma, GoIT IT School, New York
-          2019 - 2020 / Advanced Web Development Certificate, GoIT IT School,
-          New York 2020 - 2022 / Advanced Blender Animation Techniques, Udemy
+          <span class="profession"
+            >2018 - 2019 / Frontend Development Diploma, GoIT IT School, New
+            York</span
+          >
+          <span class="profession"
+            >2019 - 2020 / Advanced Web Development Certificate, GoIT IT
+            School,</span
+          >
+          <span class="profession"
+            >New York 2020 - 2022 / Advanced Blender Animation Techniques,
+            Udemy</span
+          >
         </p>
       </li>
     </ul>
