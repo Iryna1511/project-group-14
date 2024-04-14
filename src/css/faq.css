@@ -1,8 +1,8 @@
 body.dark .accordion-title h2 {
-  color: white;
+  color: #fafafa;
 }
 body.dark .accordion-content {
-  color: white;
+  color: #fafafa;
 }
 body.light .accordion-title span {
   border-color: rgba(0, 0, 0, 0.2);
@@ -17,6 +17,7 @@ li.accordion {
   font-weight: 600;
   letter-spacing: -0.02em;
   margin-bottom: 10px;
+  opacity: 0.7;
 }
 .accordion {
   position: relative;
@@ -28,7 +29,6 @@ li.accordion {
   padding-top: 30px;
   padding-right: 30px;
   padding-bottom: 20px;
-  padding-left: 20px;
 }
 .accordion-title span {
   position: absolute;
@@ -43,7 +43,7 @@ li.accordion {
   height: 30px;
 }
 .accordion-title span svg {
-  fill: white;
+  fill: #fafafa;
 }
 .accordion-content {
   box-sizing: content-box;
@@ -82,6 +82,9 @@ li.accordion {
     border-top: 1px solid var(--light-black-color);
   }
   .accordion-title h2 {
+    font-size: 20px;
+    line-height: 1.5;
+    letter-spacing: -0.02em;
     cursor: pointer;
   }
   .accordion-title span {
@@ -105,6 +108,9 @@ li.accordion {
   }
   .accordion {
     width: 50%;
+  }
+  .accordion-title {
+    padding-left: 32px;
   }
   .accordion:nth-child(1) {
     padding-left: 0;
