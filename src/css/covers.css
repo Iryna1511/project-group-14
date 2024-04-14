@@ -1,0 +1,120 @@
+.covers.section {
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: 0;
+  margin-right: 0;
+  max-width: 100%;
+}
+.covers-box {
+  position: relative;
+  height: 508px;
+  overflow: hidden;
+
+  background-image: url(../img/under-faq/covers_mobile.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  max-width: 100%;
+}
+
+.marquee {
+  position: absolute;
+  right: -1325px;
+  left: -100px;
+  top: 65px;
+}
+
+.marquee__inner {
+  height: auto;
+  display: flex;
+  transform: rotate(16deg);
+  gap: 17px;
+}
+
+.marquee-line {
+  width: 282px;
+  height: 163px;
+  margin-top: 40px;
+  flex-shrink: 0;
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  animation-name: marqueeLine;
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+@keyframes marqueeLine {
+  from {
+    transform: translateX(-20%);
+  }
+
+  to {
+    transform: translateX(-180%);
+  }
+}
+
+@media screen and (min-resolution: 192dpi) and (max-width: 767px),
+  screen and (min-resolution: 2dppx) and (max-width: 767px),
+  screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
+  .covers-box {
+    background-image: url(../img/under-faq/covers_mobile@2x.png);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .covers-box {
+    background-image: url(../img/under-faq/covers_tablet.png);
+    height: 960px;
+  }
+
+  .marquee-line {
+    width: 544px;
+    height: 314px;
+    padding-right: 10px;
+    margin-top: 40px;
+  }
+
+  .marquee {
+    right: -2000px;
+    top: 180px;
+    left: -100px;
+  }
+}
+
+@media screen and (min-resolution: 192dpi) and (min-width: 768px),
+  screen and (min-resolution: 2dppx) and (min-width: 768px),
+  screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
+  .covers-box {
+    background-image: url(../img/under-faq/covers_tablet@2x.png);
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .covers-box {
+    background-image: url(../img/under-faq/covers_desctop.png);
+  }
+
+  .marquee {
+    right: -1325px;
+    top: -200px;
+    left: -100px;
+  }
+
+  .marquee-line {
+    width: 544px;
+    height: 314px;
+
+  }
+}
+
+@media screen and (min-resolution: 192dpi) and (min-width: 1440px),
+  screen and (min-resolution: 2dppx) and (min-width: 1440px),
+  screen and (min-device-pixel-ratio: 2) and (min-width: 1440px) {
+  .covers-box {
+    background-image: url(../img/under-faq/covers_desctop@2x.png);
+  }
+}

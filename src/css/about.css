@@ -4,22 +4,15 @@
 }
 .about-text {
   font-size: 24px;
-  font-weight: 500;
   line-height: 28px;
-  letter-spacing: -3%;
+  letter-spacing: -0.03em;
   text-align: left;
   text-transform: uppercase;
-  padding: 32px;
-  display: flex;
-  justify-content: center;
+  padding: 32px 32px 272px 32px;
+
   border-radius: 24px;
   background: rgb(36, 37, 39);
-  width: 343px;
-  height: 500px;
-  flex-grow: 0;
   margin-bottom: 16px;
-  display: block;
-  max-width: 343px;
 }
 .red-color {
   color: rgb(237, 59, 68);
@@ -30,19 +23,24 @@
 
 .thumb {
   display: block;
+  max-width: 100%;
+  height: auto;
   border-radius: 24px;
-  max-width: 343px;
 }
 
 .about-list {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
+  gap: 32px;
   margin: 32px 0px;
+}
+.list-item-about {
+  border-bottom: 1px solid rgba(250, 250, 250, 0.2);
 }
 
 .list-header-about {
+  display: flex;
+  justify-content: space-between;
   color: rgba(250, 250, 250, 0.4);
   font-size: 16px;
   font-weight: 600;
@@ -52,26 +50,34 @@
   text-transform: uppercase;
 }
 .about-item-text {
-  color: rgb(250, 250, 250);
-  font-family: Inter Tight;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 24px;
-  letter-spacing: -2%;
   text-align: left;
 }
-
+.about-item-text:not(:last-child) {
+  margin-bottom: 32px;
+}
+/* .about-skills {
+   display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  padding: 0px;
+  margin-top: auto;
+  margin-left: auto;
+} */
 .skills-list {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
+  padding: 0px;
+  margin-top: auto;
+  margin-left: auto;
 }
 .skills-item {
-  position: static;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-shrink: 0;
   width: 130px;
   height: 130px;
   margin-left: 0px;
@@ -83,14 +89,99 @@
 .skills-item:first-child {
   background-color: rgb(237, 59, 68);
 }
-.skills-item:hover,
-:focus {
+.skills-item:hover {
   background-color: rgb(237, 59, 68);
 }
 
+.button-up {
+  background-color: #242424;
+  /* color: #fafafa; */
+  /* padding: 0; */
+  border: none;
+  padding: 0;
+  /* border: 1px solid rgba(250, 250, 250, 0.2); */
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.accordeon {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 @media screen and (min-width: 768px) {
   .about-text {
-    align-items: center;
+    padding: 64px 64px 436px 64px;
+    font-size: 38px;
+    line-height: 40px;
+  }
+  .thumb {
+    max-width: 704px;
+    height: 700px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .skills-item {
+    width: 200px;
+    height: 200px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .about-text {
+    padding: 64px 64px 396px 64px;
+    max-width: 680px;
+    height: 700px;
+  }
+  .about-text-container {
+    display: flex;
+    flex-direction: row;
+  }
+  .thumb {
+    max-width: 680px;
+    height: 700px;
+  }
+  .list-item-about {
+    display: flex;
+    flex-direction: row;
+  }
+  .about-item-text {
+    box-sizing: border-box;
+    width: 612px;
+    height: 368px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-left: auto;
+    margin-top: auto;
+  }
+
+  .about-me-item {
+    width: 612px;
+    height: 368px;
+    padding-left: 696px;
+    padding-right: 68px;
+    padding-top: 48px;
+    padding-bottom: -16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 32px;
+  }
+
+  .profession {
+    margin: 10px 0px;
+  }
+}
+/* align-items: center;
     text-align: center;
   }
   .about-text-container {
@@ -99,9 +190,9 @@
   .thumb {
     max-width: 704px;
   }
-}
+}  */
 
-@media screen and (min-width: 1440px) {
+/* @media screen and (min-width: 1440px) {
   .about-text-container {
     flex-direction: row;
     gap: 32px;
@@ -112,4 +203,4 @@
   .thumb {
     max-width: 680px;
   }
-}
+} */

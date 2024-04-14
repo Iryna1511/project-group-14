@@ -75,7 +75,7 @@
     line-height: 24px;
     letter-spacing: -0.32px;
     text-align: left;
-    overflow: scroll;
+    overflow: auto;
   }
   
   .arrow-swiper {
@@ -114,13 +114,6 @@
     .reviews {
       min-width: 704px;
       padding: 48px 0;
-    }
-  }
-  
-  @media screen and (min-width: 1280px) {
-    .reviews {
-      min-width: 1180px;
-      padding: 82px 0;
     }
   }
   
