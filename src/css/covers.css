@@ -41,10 +41,13 @@
   align-items: center;
   justify-content: center;
   white-space: nowrap;
+}
+
+.marquee-line-animation {
   animation-name: marqueeLine;
-  animation-duration: 5s;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
 }
 
 @keyframes marqueeLine {
