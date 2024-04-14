@@ -59,8 +59,8 @@
 
 .wrapper_for_button_order {
   display: flex;
-  justify-content: center;
-  margin-left: -120px;
+ /* justify-content: center;
+  margin-left: -120px;*/
 }
 
 .order_button {
@@ -142,6 +142,7 @@
   .wrapper_for_benefits {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
   }
 
   .heder_for_section_benefit {
@@ -154,6 +155,8 @@
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 8px;
+    min-width: 50%;
+    max-width: 50%;
   }
 
   .preference_cell {
@@ -162,12 +165,8 @@
     padding-bottom: 0;
   }
 
-  .order_button {
-    margin-left: 50%;
-  }
-
   .wrapper_for_button_order {
     display: block;
-    margin-left: 0px;
+    padding-left: 50%;
   }
 }
