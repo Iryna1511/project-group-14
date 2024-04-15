@@ -57,6 +57,9 @@
     <symbol id="menu" viewBox="0 0 32 32">
       <path fill="none" stroke="#fafafa" stroke-linejoin="round" stroke-width="2.286" d="M4 11.326h24M4 20.663h24"
         style="stroke:var(--color1, #fafafa)" />
-    </symbol>
+</symbol>
+   <symbol id="mobilemenu" viewBox="0 0 28 28">
+<path fill="none"  stroke="#FAFAFA" stroke-linejoin="round" stroke-width="2" d="M3.5 9.91666H24.5M3.5 18.0833H24.5" stroke-linecap="round"  style="stroke:var(--color1, #fafafa)" />
+</symbol>
   </defs>
 </svg>
