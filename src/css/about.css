@@ -1,25 +1,19 @@
 .about-text-container {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  gap: 16px;
 }
 .about-text {
   font-size: 24px;
-  font-weight: 500;
-  line-height: 28px;
-  letter-spacing: -3%;
+  line-height: 1.05;
+  letter-spacing: -0.03em;
   text-align: left;
   text-transform: uppercase;
-  padding: 32px;
-  display: flex;
-  justify-content: center;
+  padding: 32px 32px 272px 32px;
+
   border-radius: 24px;
   background: rgb(36, 37, 39);
-  width: 343px;
-  height: 500px;
-  flex-grow: 0;
-  margin-bottom: 16px;
-  display: block;
-  max-width: 343px;
 }
 .red-color {
   color: rgb(237, 59, 68);
@@ -29,49 +23,67 @@
 }
 
 .thumb {
-  display: block;
   border-radius: 24px;
-  max-width: 343px;
+  flex-shrink: 0;
 }
 
 .about-list {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
+  gap: 32px;
   margin: 32px 0px;
+}
+.list-item-about {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid rgba(250, 250, 250, 0.2);
 }
 
 .list-header-about {
+  display: flex;
+  justify-content: space-between;
   color: rgba(250, 250, 250, 0.4);
   font-size: 16px;
   font-weight: 600;
-  line-height: 24px;
-  letter-spacing: -2%;
-  text-align: left;
   text-transform: uppercase;
 }
 .about-item-text {
-  color: rgb(250, 250, 250);
-  font-family: Inter Tight;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 24px;
-  letter-spacing: -2%;
   text-align: left;
+  margin-top: 8px;
+  margin-bottom: 32px;
+}
+.about-option:not(:last-child) {
+  margin-bottom: 10px;
 }
 
+.button-up {
+  border: solid 1px rgba(250, 250, 250, 0.2);
+  padding: 0;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.about-skills {
+  display: flex;
+  overflow: hidden;
+  justify-content: space-between;
+}
 .skills-list {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
-  flex-direction: row;
+  padding: 0px;
 }
 .skills-item {
-  position: static;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-shrink: 0;
   width: 130px;
   height: 130px;
   margin-left: 0px;
@@ -83,33 +95,28 @@
 .skills-item:first-child {
   background-color: rgb(237, 59, 68);
 }
-.skills-item:hover,
-:focus {
+.skills-item:hover {
   background-color: rgb(237, 59, 68);
+}
+.btn-right {
+  opacity: 0.4;
 }
 
 @media screen and (min-width: 768px) {
   .about-text {
-    align-items: center;
-    text-align: center;
+    padding: 64px 64px 404px 64px;
+    font-size: 38px;
   }
-  .about-text-container {
-    max-width: 704px;
-  }
-  .thumb {
-    max-width: 704px;
+  .skills-item {
+    width: 200px;
+    height: 200px;
   }
 }
-
 @media screen and (min-width: 1440px) {
   .about-text-container {
     flex-direction: row;
-    gap: 32px;
   }
-  .about-text {
-    max-width: 680px;
-  }
-  .thumb {
-    max-width: 680px;
+  .about-item-text {
+    margin-left: 50%;
   }
 }

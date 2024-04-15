@@ -4,14 +4,18 @@
   line-height: 24px;
   font-weight: 400;
 
-  color: #242424;
-  background-color: rgba(255, 255, 255, 0.87);
-
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+
+  --hard-black-color: #1c1d20;
+  --medium-black-color: #242527;
+  --light-black-color: #3b3b3b;
+  --red-color: #ed3b44;
+  --white-color: #fafafa;
+  --animation-hover: 250ms ease-in;
 }
 
 /* Reset styles */
