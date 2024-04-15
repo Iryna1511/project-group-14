@@ -160,23 +160,3 @@
     margin-right: 86px;
   }
 }
-
-@media screen and (min-width: 1440px) {
-    .footer-main {
-        padding-top: 80px;
-        margin-top: 82px;
-    }
-
-    .footer-main>.container {
-        padding-left: 196px;
-        padding-right: 196px;
-    }
-
-    .footer-form input {
-        width: 390px;
-    }
-
-    #form-comment {
-        margin-right: 86px;
-    }
-}
