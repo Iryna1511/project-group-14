@@ -4,48 +4,49 @@
         background-size: cover;
         background-position: center;
     }
+
     @media (min-device-pixel-ratio: 2),
 (min-resolution: 192dpi),
 (min-resolution: 2dppx) {
     .hero {
-        background-image: linear-gradient(rgba(46, 47, 66, 0.70),
-                rgba(46, 47, 66, 0.70)),
-            url(../img/img_mobile/hero_mobile_x2-min.jpg);
+        background-image: url(../img/img_mobile/hero_mobile_x2-min.jpg);
     }
 }
-
-    .main-content {
-        font-size: 50px;
-        line-height: 50px;
-        letter-spacing: 0.03em;
-        font-weight: 300;
+   .main-content {
+    font-size: 50px;
+    line-height: 50px;
+    letter-spacing: 0.03em;
+    padding: 281px 0px;
+    text-transform: uppercase;
     }
-   /*
+    
     .social-media-container {
         display: flex;
         align-items: center;
-        justify-content: flex-end;
-        padding-right: 17px;
-        padding-bottom: 32px;
-    }
+        justify-content: center;
+      }
+    
     .social-links {
         display: flex;
         gap: 4px;
         font-size: 16px;
         margin-right: 8px;
     }
+    
     .social-media-container {
         display: flex;
         align-items: center;
         justify-content: center;
         padding-bottom: 32px; 
     }
+    
     .social-links {
         display: flex;
-            gap: 4px;
-            font-size: 14px;
-            margin-right: 4px;
+        gap: 4px;
+        font-size: 14px;
+        margin-right: 4px;
         }
+        
         .social-media-list a {
             display: block;
             text-decoration: none;
@@ -55,55 +56,54 @@
             height: 37px;
             border: 1px solid rgba(255, 255, 255, 0.1);
             text-align: center;
-            line-height: 19px;
+            line-height: 17px;
         }
-*/
-
-
-@media(min-width:768px){
-    
-.hero {
+        
+        .email-link {
+            text-decoration: none;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            width: 178px;
+            height: 37px;
+            border-radius: 60px;
+            padding: 10px 12px;
+            line-height: 17px;
+            font-size: 14px;
+    }
+   
+@media screen and (min-width:768px){
+    .hero {
         background: url(../img/img_tablet/Hero.png);
         background-size: cover;
         background-position: center;
     }
 }
- @media (min-device-pixel-ratio: 2),
- (min-resolution: 192dpi),
- (min-resolution: 2dppx) {
-     .hero {
-         background-image: 
-             url(../img/img_tablet/Hero-2.png);
-     }
- }
-   
+ 
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .hero {
+        background-image: 
+            url(../img/img_tablet/Hero-2.png);
+    }
+}
+
+@media screen and (min-width: 768px){
     .main-content {
-        font-size: 90px;
-        letter-spacing: 0.03em;
-        line-height: 90px;
-        text-transform: capitalize;
-        padding-top: 300px;
-        padding-bottom: 243px;
-
+        padding: 300px 104px 274px 0px;
     }
-
-
-    .social-media-container {
+        .social-media-container {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;   
+        }
+    .social-links {
         display: flex;
-        align-items: center;
-        justify-content: flex-end;
-        padding-bottom: 32px; 
-    }
-
-
-.social-links {
-    display: flex;
-        gap: 8px;
-        font-size: 16px;
-        margin-right: 8px;
-    }
-
-    .social-media-list a {
+            gap: 8px;
+            font-size: 16px;
+            margin-right: 8px;
+        }
+    
+        .social-media-list a {
             display: block;
             text-decoration: none;
             padding: 18px 16px;
@@ -113,24 +113,26 @@
             border: 1px solid rgba(255, 255, 255, 0.1);
             text-align: center;
             line-height: 19px;
+            }
+        }
+    
+        .email-link {
+                text-decoration: none;
+                border: 1px solid rgba(255, 255, 255, 0.1);
+                width: 223px;
+                height: 55px;
+                border-radius: 60px;
+                padding: 18px 24px;
+                line-height: 19px;
         }
 
-    .email-link {
-            text-decoration: none;
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            width: 223px;
-            height: 55px;
-            border-radius: 60px;
-            padding: 18px 24px;
-            line-height: 19px;
-    }
-
-
-    @media (min-width: 1440px) {
+   
+    @media screen and (min-width: 1440px) {
         
         .main-content {      
             padding: 300px 114px 330px;
  }
+    
  .hero {
     background: url(../img/img_tablet/Hero.png);
     background-size: cover;
@@ -145,11 +147,8 @@
             url(../img/img_tablet/Hero-2.png);
     }
 }
-     
-
-    
-    
     }
+
     
     
     
