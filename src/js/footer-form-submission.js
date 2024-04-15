@@ -3,7 +3,7 @@ import { createRequests } from './portfolio-api';
 const form = document.querySelector(".footer-form");
 const email = form.elements.email;
 const comment = form.elements.comment;
-// const modal = document.querySelector(".modal");
+const modal = document.querySelector(".modal");
 const localStorageKey = "form-state";
 
 form.addEventListener("submit", async (event) => {
@@ -15,7 +15,7 @@ form.addEventListener("submit", async (event) => {
 
   try {
     createRequests(formData);
-    // modal.classList.add("is-open");
+    modal.classList.add("is-open");
     email.value = '';
     comment.value = '';  
     console.log(formData);
