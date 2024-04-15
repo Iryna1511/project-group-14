@@ -26,10 +26,57 @@
     <script type="module" crossorigin src="/project-group-14/commonHelpers.js"></script>
     <link rel="modulepreload" crossorigin href="/project-group-14/assets/vendor-cef296b0.js">
     <link rel="stylesheet" href="/project-group-14/assets/vendor-f07dab48.css">
-    <link rel="stylesheet" href="/project-group-14/assets/index-0f69c3dc.css">
+    <link rel="stylesheet" href="/project-group-14/assets/index-71ea5c9a.css">
   </head>
   <body>
-    
+    <header class="header section">
+  <div class="header-container container">
+    <button class="mobile-menu-open-btn" type="button">
+      <svg
+        class="mobile-menu-open-btn-icon"
+        width="28"
+        height="28"
+        aria-label="mobile menu open icon"
+      >
+        <use href="/project-group-14/assets/symbol-defs-e09aa784.svg#icon-burger"></use>
+      </svg>
+    </button>
+  </div>
+
+  <div class="mobile-menu-wrapper is-open">
+  <div class="container mobile-menu-container">
+    <button class="mobile-menu-close-btn" type="button">
+      <svg
+        class="modal-close-button-icon"
+        width="28"
+        height="28"
+        aria-label="close mobile icon"
+      >
+        <use href="/project-group-14/assets/symbol-defs-e09aa784.svg#icon-cross"></use>
+      </svg>
+    </button>
+    <ul class="mobile-menu">
+      <li class="mobile-menu-item">
+        <a class="mobile-menu-link link menu-studio" href="#about-me"
+          >About me</a
+        >
+      </li>
+      <li class="mobile-menu-item">
+        <a class="mobile-menu-link link" href="#benefits">Benefits</a>
+      </li>
+      <li class="mobile-menu-item">
+        <a class="mobile-menu-link link" href="#projects">Projects</a>
+      </li>
+      <li class="mobile-menu-item">
+        <a class="mobile-menu-link link" href="#faq">FAQ</a>
+      </li>
+      <a class="header-link-mobile" href="#work-together">Order the project</a>
+    </ul>
+  </div>
+</div>
+
+</header>
+
     <main>
       
       <section class="section">
@@ -983,7 +1030,7 @@
       </h2>
     </div>
     <div class="footer-form-box">
-      <form class="footer-form">
+      <form class="footer-form" id="footer-form">
         <input
           type="email"
           name="email"
@@ -1012,6 +1059,29 @@
     </div>
   </div>
 </footer>
+
+
+    <div class="backdrop">
+  <div class="modal is-open">
+    <button class="modal-close-button" type="button">
+      <svg
+        class="modal-close-button-icon"
+        width="22"
+        height="22"
+        aria-label="icon-cross"
+      >
+        <use href="/project-group-14/assets/symbol-defs-e09aa784.svg#icon-cross"></use>
+      </svg>
+    </button>
+    <h3 class="modal-title secondary-title">
+      Thank you for your interest in cooperation!
+    </h3>
+    <p class="modal-decription transparent-text">
+      The manager will contact you shortly to discuss further details and
+      opportunities for cooperation. Please stay in touch.
+    </p>
+  </div>
+</div>
 
 
     
