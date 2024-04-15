@@ -1,6 +1,6 @@
 const containerForCovers = document.getElementById('animation');
 
-function isInViewport(containerForCovers) {
+export function isInViewport(containerForCovers) {
   let rect = containerForCovers.getBoundingClientRect();
   return (
     (rect.top >= 0 && rect.bottom <= window.innerHeight) ||
@@ -8,7 +8,7 @@ function isInViewport(containerForCovers) {
   );
 }
 
-function animateCovers() {
+export function animateCovers() {
   let coversSection = document.querySelector('.covers.section');
   let marqueeLines = coversSection.querySelectorAll('.marquee-line');
 

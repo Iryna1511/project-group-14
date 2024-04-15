@@ -1,10 +1,3 @@
-.covers.section {
-  padding-left: 0;
-  padding-right: 0;
-  margin-left: 0;
-  margin-right: 0;
-  max-width: 100%;
-}
 .covers-box {
   position: relative;
   height: 508px;
@@ -45,9 +38,9 @@
 
 .marquee-line-animation {
   animation-name: marqueeLine;
-    animation-duration: 5s;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
 }
 
 @keyframes marqueeLine {
@@ -110,7 +103,6 @@
   .marquee-line {
     width: 544px;
     height: 314px;
-
   }
 }
 
