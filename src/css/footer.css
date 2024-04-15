@@ -1,6 +1,7 @@
 .footer-main {
   background-image: url('../img/footer/footer-bg.png');
   background-repeat: no-repeat;
+  background-position: right;
   padding-top: 32px;
   padding-bottom: 32px;
   margin-top: 32px;
