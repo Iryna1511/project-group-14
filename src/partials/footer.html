@@ -1,37 +1,49 @@
-<footer class="footer-main section">
-    <div class="footer-head container">
-        <img 
-            class="footer-logo"
-            srcset="./img/hero/icon_portret_mobile.png 1x, ./img/hero/icon_portret_mobile@2x.png 2x"
-            src="./img/hero/icon_portret_mobile.png" 
-            alt="lloyd jefferson"
-            height="44" 
-        >
-        <h2 class="footer-header">
-            &nbsp;
-            &nbsp;
-            &nbsp;
-            &nbsp;
-            LET'S 
-            <span class="footer-work">WORK</span> 
-            <span class="footer-together">TOGETHER</span>
-        </h2>
+<footer class="footer-main">
+  <div class="container">
+    <div class="footer-head">
+      <img
+        class="footer-logo"
+        srcset="
+          ./img/hero/icon_portret_mobile.png    1x,
+          ./img/hero/icon_portret_mobile@2x.png 2x
+        "
+        src="./img/hero/icon_portret_mobile.png"
+        alt="lloyd jefferson"
+        height="44"
+      />
+      <h2 class="footer-header">
+        &nbsp; &nbsp; &nbsp; &nbsp; LET'S
+        <span class="footer-work">WORK</span>
+        <span class="footer-together">TOGETHER</span>
+      </h2>
     </div>
-    <div class="footer-form-box container">
-        <form class="footer-form">
-            <input type="email" id="form-email" pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$" placeholder="clients@gmail.com" required />
-            <input type="text" id="form-comment" placeholder="comments" required />
-            <button type="submit" class="footer-send">Send</button>
-        </form>
+    <div class="footer-form-box">
+      <form class="footer-form" id="footer-form">
+        <input
+          type="email"
+          name="email"
+          id="form-email"
+          pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
+          placeholder="clients@gmail.com"
+          required
+        />
+        <input type="text" name="comment" id="form-comment" placeholder="comments" required />
+        <button type="submit" class="footer-send">Send</button>
+      </form>
     </div>
-    <div class="footer-contacts container">
-        <ul class="footer-contact-list">
-            <li class="footer-contacts-element">
-                <a class="contact-link" href="mailto: lloydjefferson@gmail.com">lloydjefferson@gmail.com</a>
-            </li>
-            <li class="footer-contacts-element">
-                <a class="contact-link" href="tel:+380 11 1111 11 11">+380 11 1111 11 11</a>
-            </li>
-        </ul>
+    <div class="footer-contacts">
+      <ul class="footer-contact-list">
+        <li class="footer-contacts-element">
+          <a class="contact-link" href="mailto: lloydjefferson@gmail.com"
+            >lloydjefferson@gmail.com</a
+          >
+        </li>
+        <li class="footer-contacts-element">
+          <a class="contact-link" href="tel:+3801111111111"
+            >+380 11 1111 11 11</a
+          >
+        </li>
+      </ul>
     </div>
+  </div>
 </footer>
