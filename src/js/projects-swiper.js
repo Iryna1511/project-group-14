@@ -6,12 +6,12 @@ import 'swiper/css/navigation';
 const BTN_NEXT = document.querySelector('.btn-next');
 const BTN_PREV = document.querySelector('.btn-prev');
 const swiper_1 = new Swiper('.swiper-box', {
-    modules: [Navigation, Keyboard, Pagination],
-    navigation: {
-        prevEl: BTN_PREV,
-        nextEl: BTN_NEXT,
-    },
-  
+  modules: [Navigation, Keyboard, Pagination],
+  navigation: {
+    prevEl: BTN_PREV,
+    nextEl: BTN_NEXT,
+  },
+
   direction: 'horizontal',
   autoHeight: false,
   autoWidth: false,
@@ -21,15 +21,13 @@ const swiper_1 = new Swiper('.swiper-box', {
     enabled: true,
     onlyInViewport: true,
     pageUpDown: true,
-    },
+  },
   breakpoints: {
     1440: {
       direction: 'horizontal',
     },
   },
-
-}
-);
+});
 swiper_1.update();
 
 const nextObserver = new MutationObserver(mutations => {
