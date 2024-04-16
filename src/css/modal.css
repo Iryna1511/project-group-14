@@ -1,0 +1,81 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+
+  width: 100%;
+  height: 100%;
+  background-color: rgba(15, 15, 16, 0.6);
+
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+
+  transition: opacity var(--transition), visibility var(--transition);
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 40;
+  transform: translate(-50%, -50%);
+
+  padding: 64px 32px;
+  max-width: 343px;
+  max-height: 276px;
+
+  overflow: hidden;
+
+  opacity: 0;
+  visibility: hidden;
+
+  background-color: var(--hard-black-color);
+  border: 1px solid rgba(250, 250, 250, 0.1);
+  border-radius: 20px;
+
+  transition: opacity var(--transition), visibility var(--transition);
+}
+
+.modal.active,
+.backdrop.active {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.modal-close-button {
+  position: absolute;
+  display: block;
+  top: 20px;
+  right: 20px;
+  padding: 0;
+  border: none;
+  background-color: var(--hard-black-color);
+}
+
+.modal-title {
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.modal-decription {
+  width: 279px;
+  text-align: center;
+
+  color: var(--text-color);
+}
+
+@media screen and (min-width: 768px) {
+  .modal {
+    max-width: 492px;
+    max-height: 246px;
+
+    padding-right: 64px;
+    padding-left: 64px;
+  }
+  .modal-decription {
+    width: 364px;
+  }
+}

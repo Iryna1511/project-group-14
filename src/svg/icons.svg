@@ -32,22 +32,6 @@
         d="M16 16a6 6 0 0 1-6-6c0-3.32 2.68-6 6-6a6 6 0 0 1 6 6c0 3.307-2.693 6-6 6z"
         style="stroke:var(--color1, #fafafa)" />
     </symbol>
-    <symbol id="button-up" viewBox="0 0 32 32">
-      <path fill="#fafafa"
-        d="m12.8 13.507 3.789 3.789-.589.598-.598-.598 3.789-3.789 1.187 1.187-4.379 4.387-4.387-4.387 1.187-1.187z"
-        style="fill:var(--color1, #fafafa)" />
-      <path fill="none" stroke="#fafafa" stroke-width=".842"
-        d="M15.158 30.737c-8.604 0-15.579-6.975-15.579-15.579S6.554-.421 15.158-.421c8.604 0 15.579 6.975 15.579 15.579s-6.975 15.579-15.579 15.579z"
-        style="stroke:var(--color1, #fafafa)" />
-    </symbol>
-    <symbol id="buttondown" viewBox="0 0 32 32">
-      <path fill="#fafafa"
-        d="m19.192 18.484-3.789-3.789.598-.589.589.589-3.789 3.789-1.187-1.187 4.387-4.387 4.379 4.387-1.187 1.187z"
-        style="fill:var(--color1, #fafafa)" />
-      <path fill="none" stroke="#fafafa" stroke-width=".842"
-        d="M16 .421C24.604.421 31.579 7.396 31.579 16S24.604 31.579 16 31.579C7.396 31.579.421 24.604.421 16S7.396.421 16 .421z"
-        style="stroke:var(--color1, #fafafa)" />
-    </symbol>
     <symbol id="x" viewBox="0 0 32 32">
       <path fill="none" stroke="#fafafa" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.286"
         d="M24 8 8 24" style="stroke:var(--color1, #fafafa)" />
@@ -57,9 +41,6 @@
     <symbol id="menu" viewBox="0 0 32 32">
       <path fill="none" stroke="#fafafa" stroke-linejoin="round" stroke-width="2.286" d="M4 11.326h24M4 20.663h24"
         style="stroke:var(--color1, #fafafa)" />
-</symbol>
-   <symbol id="mobilemenu" viewBox="0 0 28 28">
-<path fill="none"  stroke="#FAFAFA" stroke-linejoin="round" stroke-width="2" d="M3.5 9.91666H24.5M3.5 18.0833H24.5" stroke-linecap="round"  style="stroke:var(--color1, #fafafa)" />
-</symbol>
+    </symbol>
   </defs>
 </svg>
