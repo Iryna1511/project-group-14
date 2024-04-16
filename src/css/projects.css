@@ -100,6 +100,11 @@
   border: 1px solid rgb(250, 250, 250, 50%);
   background-size: 24px 24px;
 }
+.btn-prev {
+  opacity: 0.5;
+  cursor: not allowed;
+  border: 1px solid rgba(250, 250, 250, 0.2);
+}
 
 .arrow-swiper {
   stroke: rgb(250, 250, 250, 100%);
@@ -145,6 +150,9 @@
 }
 
 @media screen and (min-width: 1440px) {
+  .swiper-slide.swiper-slide-active {
+    flex-direction: row !important;
+  }
   .swiper-box {
     border-radius: 24px;
     max-width: 1376px;
@@ -172,8 +180,5 @@
     margin-bottom: 120px;
     margin-left: auto;
     margin-right: auto;
-  }
-  .swiper-slide.swiper-slide-active {
-    flex-direction: row !important;
   }
 }
