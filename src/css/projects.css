@@ -100,6 +100,11 @@
   border: 1px solid rgb(250, 250, 250, 50%);
   background-size: 24px 24px;
 }
+.btn-prev {
+  opacity: 0.5;
+  cursor: not allowed;
+  border: 1px solid rgba(250, 250, 250, 0.2);
+}
 
 .arrow-swiper {
   stroke: rgb(250, 250, 250, 100%);
