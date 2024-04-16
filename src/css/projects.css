@@ -151,8 +151,7 @@
 
 @media screen and (min-width: 1440px) {
   .swiper-slide.swiper-slide-active {
-    display: flex;
-    flex-direction: row;
+    flex-direction: row !important;
   }
   .swiper-box {
     border-radius: 24px;
