@@ -9,3 +9,4 @@ new Accordion(accordions, {
   showMultiple: false,
   openOnInit: [0],
 });
+
