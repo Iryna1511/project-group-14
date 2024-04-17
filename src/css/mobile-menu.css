@@ -14,21 +14,6 @@
   .menu-item {
     display: none;
   }
-  .mobile-menu-open-btn {
-    display: block;
-    width: 40px;
-    height: 40px;
-    background-color: transparent;
-    border: none;
-    padding: 0;
-    line-height: 0;
-    fill: #2f2f37;
-  }
-
-  .mobile-menu-open-btn:focus,
-  .mobile-menu-open-btn:active {
-    outline: none;
-  }
 
   .mobile-menu-wrapper {
     position: fixed;
@@ -95,5 +80,14 @@
   .header-link-mobile:hover,
   .header-link-mobile:focus {
     background-color: var(--accent-color);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .mobile-menu-wrapper {
+    display: none;
+  }
+  .mobile-menu-container {
+    display: none;
   }
 }

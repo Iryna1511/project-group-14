@@ -1,3 +1,5 @@
+@import url('./faq-base-styles.css');
+
 body.dark .accordion-title h2 {
   color: #fafafa;
 }
@@ -41,6 +43,7 @@ li.accordion {
   border-radius: 100px;
   width: 30px;
   height: 30px;
+  opacity: 0.5;
 }
 .accordion-title span svg {
   fill: #fafafa;

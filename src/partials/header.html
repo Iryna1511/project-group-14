@@ -1,16 +1,31 @@
-<header class="header section">
-  <div class="header-container container">
-    <button class="mobile-menu-open-btn" type="button">
-      <svg
-        class="mobile-menu-open-btn-icon"
-        width="28"
-        height="28"
-        aria-label="mobile menu open icon"
-      >
-        <use href="./svg/icons.svg#menu"></use>
-      </svg>
-    </button>
+<header class="page-header">
+  <div class="container header-navigation">
+    <nav class="logo-navigation">
+      <a href="./index.html" class="logo">
+        <img
+          srcset="
+            ./img/hero/icon_portret_mobile.png    1x,
+            ./img/hero/icon_portret_mobile@2x.png 2x
+          "
+          alt="main image"
+          width="80"
+          height="80"
+        />jefferson*
+      </a>
+      <button class="burger-button mobile-menu-open-btn" type="button">
+        <svg
+          class="mobile-menu-icon"
+          width="28"
+          height="28"
+          aria-label="mobile menu open icon"
+        >
+          <use href="../svg/icons.svg#menu"></use>
+        </svg>
+      </button>
+      <ul class="navbar-menu">
+        <li class="menu"><a href="#">Menu</a></li>
+      </ul>
+      <a class="button-order" href="#work-together">Order the project</a>
+    </nav>
   </div>
-
-  <load src="partials/mobile-menu.html" />
 </header>
