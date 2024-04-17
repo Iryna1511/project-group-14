@@ -36,11 +36,11 @@
         />
       </picture>
     </div>
-    <ul class="about-list">
-      <li class="list-item-about">
-        <h3 class="list-header-about">
+    <ul class="about-list accordion-container">
+      <li class="list-item-about ac">
+        <h3 class="list-header-about ac-header">
           ABOUT ME
-          <button class="button-up" type="button">
+          <button class="button-up ac-trigger" type="button">
             <svg class="arrow-accordeon" width="20" height="20">
               <use href="./svg/icons.svg#icon-arrow-down" />
             </svg>
@@ -51,7 +51,7 @@
             </svg>
           </button>
         </h3>
-        <ul class="about-item-text">
+        <ul class="about-item-text ac-panel">
           <li class="about-option">
             <p>
               I am Lloyd Jefferson, a talented programmer with extensive
@@ -79,41 +79,41 @@
           </li>
         </ul>
       </li>
-      <li class="list-item-about about-role">
-        <h3 class="list-header-about">
+      <li class="list-item-about about-role ac">
+        <h3 class="list-header-about ac-header">
           <span>ROLE</span>
-          <button class="button-up" type="button">
+          <button class="button-up ac-trigger" type="button">
             <svg class="arrow-accordeon" width="20" height="20">
               <use href="./svg/icons.svg#icon-arrow-down" />
             </svg>
           </button>
-          <button class="button-down visually-hidden" type="button">
+          <button class="button-down visually-hidden ac-trigger" type="button">
             <svg class="arrow-accordeon" width="20" height="20">
               <use href="./svg/icons.svg#icon-arrow-down" />
             </svg>
           </button>
         </h3>
-        <ul class="about-item-text">
+        <ul class="about-item-text ac-panel">
           <li class="about-option"><p>Frontend development</p></li>
           <li class="about-option"><p>HeadlessCMS,Wordpress</p></li>
           <li class="about-option"><p>Blender(enjoy)</p></li>
         </ul>
       </li>
-      <li class="list-item-about about-education">
-        <h3 class="list-header-about">
+      <li class="list-item-about about-education ac">
+        <h3 class="list-header-about ac-header">
           <span>EDUCATION</span>
-          <button class="button-up" type="button">
+          <button class="button-up ac-trigger" type="button">
             <svg class="arrow-accordeon" width="20" height="20">
               <use href="./svg/icons.svg#icon-arrow-down" />
             </svg>
           </button>
-          <button class="button-down visually-hidden" type="button">
+          <button class="button-down visually-hidden ac-trigger" type="button">
             <svg class="arrow-accordeon" width="20" height="20">
               <use href="./svg/icons.svg#icon-arrow-down" />
             </svg>
           </button>
         </h3>
-        <ul class="about-item-text">
+        <ul class="about-item-text ac-panel">
           <li class="about-option">
             <p>
               2018 - 2019 / Frontend Development Diploma, GoIT IT School, New
@@ -134,7 +134,60 @@
         </ul>
       </li>
     </ul>
-    <div class="about-skills">
+
+    <div class="swiper-skills">
+      <ul class="swiper-wrapper">
+        <li class="swiper-slide"><p class="swiper-text">HTML/CSS</p></li>
+        <li class="swiper-slide">
+          <p class="swiper-text">JavaScript</p>
+        </li>
+        <li class="swiper-slide">
+          <p class="swiper-text">React</p>
+        </li>
+        <li class="swiper-slide">
+          <p class="swiper-text">Node.js</p>
+        </li>
+        <li class="swiper-slide">
+          <p class="swiper-text">React Native</p>
+        </li>
+        <li class="swiper-slide">
+          <p class="swiper-text">Soft skills</p>
+        </li>
+      </ul>
+      <button class="btn-right" type="button" disabled>
+        <svg class="icon-btn-right" width="40" height="40">
+          <use href="./svg/icons.svg#arrowtotheright" />
+        </svg>
+      </button>
+    </div>
+      <div class="swiper-pagination"></div>
+    </div>
+    <!-- <div class="swiper-skills">
+      <ul class="swiper-list">
+        <li class="swiper-item"><p class="swiper-text">HTML/CSS</p></li>
+        <li class="swiper-item">
+          <p class="swiper-text">JavaScript</p>
+        </li>
+        <li class="swiper-item">
+          <p class="swiper-text">React</p>
+        </li>
+        <li class="swiper-item">
+          <p class="swiper-text">Node.js</p>
+        </li>
+        <li class="swiper-item">
+          <p class="swiper-text">React Native</p>
+        </li>
+        <li class="swiper-item">
+          <p class="swiper-text">Soft skills</p>
+        </li>
+      </ul>
+      <button class="swiper-btn-right" type="button" disabled>
+        <svg class="icon-btn-right" width="40" height="40">
+          <use href="./svg/icons.svg#arrowtotheright" />
+        </svg>
+      </button>
+    </div> -->
+    <!-- <div class="about-skills">
       <ul class="skills-list">
         <li class="skills-item"><p class="skills-text">HTML/CSS</p></li>
         <li class="skills-item">
@@ -158,6 +211,6 @@
           <use href="./svg/icons.svg#arrowtotheright" />
         </svg>
       </button>
-    </div>
+    </div> -->
   </div>
 </section>
