@@ -49,9 +49,26 @@
   .button-order {
     display: none;
   }
+  .submenu-link {
+    display: none;
+    transform: translateY(-100%);
+    transition: opacity 3000ms ease;
+  }
 }
 
 @media screen and (min-width: 768px) {
+  .navbar-menu {
+    text-align: center;
+  }
+  .submenu-link {
+    display: none;
+  }
+  .submenu-link.is-active {
+    display: block;
+    background-color: transparent;
+    transform: translateY(0);
+    text-decoration: underline;
+  }
   .header-navigation {
     display: flex;
     justify-content: space-between;
@@ -109,7 +126,7 @@
     font-weight: 500;
     text-decoration: underline;
     font-size: 16px;
-    display: inline;
+    display: block;
   }
 }
 
