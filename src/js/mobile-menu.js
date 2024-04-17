@@ -29,8 +29,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const targetElement = document.getElementById(id);
         if (targetElement) {
           targetElement.scrollIntoView({
-            behavior: 'smooth',
-            block: 'start'
+            behavior: 'smooth'
           });
         }
       }

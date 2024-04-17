@@ -31,7 +31,7 @@
   }
 
   .mobile-menu-wrapper {
-    position: absolute;
+    position: fixed;
     top: 0;
     right: -100%;
     width: 100%;
