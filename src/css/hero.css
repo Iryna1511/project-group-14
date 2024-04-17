@@ -1,5 +1,5 @@
 .hero {
-        background-image: url(../img/img_mobile/hero_mobile-min.jpg);
+        background-image: url(../img/hero/hero_mobile.png);
         background-size: cover;
         background-position: center;
     }
@@ -8,15 +8,18 @@
 (min-resolution: 192dpi),
 (min-resolution: 2dppx) {
     .hero {
-        background-image: url(../img/img_mobile/hero_mobile_x2-min.jpg);
+        background-image: url(../img/hero/hero_mobile@2x.png);
     }
 }
    .main-content {
     font-size: 50px;
+    padding: 281px 0px;
     line-height: 50px;
     letter-spacing: 0.03em;
-    padding: 281px 0px;
-    text-transform: uppercase;
+
+    
+
+   
     }
     
     .social-media-container {
@@ -71,7 +74,7 @@
    
 @media screen and (min-width:768px){
     .hero {
-        background-image: url(../img/img_tablet/hero_tablet.jpg);
+        background-image: url(../img/hero/hero_tablet.png);
         background-size: cover;
         background-position: center;
     }
@@ -82,13 +85,16 @@
 (min-resolution: 2dppx) {
     .hero {
         background-image: 
-            url(../img/img_tablet/hero_tablet_x2.jpg);
+            url(../img/hero/hero_tablet@2x.png);
     }
 }
 
 @media screen and (min-width: 768px){
     .main-content {
-        padding: 300px 104px 274px 0px;
+     padding: 300px 104px 274px 0px;
+     font-size: 90px;
+     line-height: 90px;
+    
     }
         .social-media-container {
             display: flex;
@@ -113,27 +119,28 @@
             text-align: center;
             line-height: 19px;
             }
+        
+    .email-link {
+            text-decoration: none;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            width: 223px;
+            height: 55px;
+            border-radius: 60px;
+            padding: 18px 24px;
+            line-height: 19px;   
         }
-    
-        .email-link {
-                text-decoration: none;
-                border: 1px solid rgba(255, 255, 255, 0.1);
-                width: 223px;
-                height: 55px;
-                border-radius: 60px;
-                padding: 18px 24px;
-                line-height: 19px;
-        }
+    }
 
    
     @media screen and (min-width: 1440px) {
         
         .main-content {      
-            padding: 300px 114px 330px;
+        padding: 300px 114px 330px;
+
  }
     
  .hero {
-    background: url(../img/img_desctop/Hero.png);
+    background: url(../img/hero/hero_desctop.png);
     background-size: cover;
     background-position: center;
 }
@@ -143,7 +150,7 @@
 (min-resolution: 2dppx) {
     .hero {
         background-image: 
-            url(../img/img_desctop/Hero-2.png);
+            url(../img/hero/hero_desctop@2x.png);
     }
 }
     }
