@@ -10,3 +10,11 @@ new Accordion(accordions, {
   openOnInit: [0],
 });
 
+const aboutListEl = document.querySelector('.about-list');
+const arrowBtn = document.querySelectorAll('.button-up');
+aboutListEl.addEventListener('click', event => {
+  console.log(event);
+  if (event.target === arrowBtn) {
+    arrowBtn.classList.toggle('rotated');
+  }
+});

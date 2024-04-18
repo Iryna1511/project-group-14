@@ -66,6 +66,11 @@
   justify-content: center;
   align-items: center;
   flex-shrink: 0;
+  transform: rotate(0);
+  transition: rotate 300ms ease;
+}
+.button-up.rotated {
+  transform: rotate(180deg);
 }
 .arrow-accordeon {
   display: flex;
