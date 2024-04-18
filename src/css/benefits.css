@@ -56,34 +56,22 @@
 #massages {
   color: #ed3b44;
 }
-
-.wrapper_for_button_order {
-  display: flex;
-}
-
-.order_button {
-  border: 1px solid rgba(250, 250, 250, 0.2);
-  width: 198px;
-  height: 56px;
-  background-color: #242527;
-  border-radius: 60px;
-  color: #fafafa;
-  transition: border-color color 0.3s ease;
-}
-
 .link_for_order_button {
-  font-size: 16px;
-  font-weight: 500;
-  color: rgb(250, 250, 250);
-  width: 100%;
+  display: block;
+  padding: 18px 36px;
+  max-width: 188px;
+  font: inherit;
+  line-height: 1;
+  color: inherit;
+  border: 1px solid rgba(250, 250, 250, 0.2);
+  border-radius: 60px;
+  background-color: transparent;
+  transition: border-color 0.3s ease, color 0.3s ease;
 }
-
-.order_button:hover {
-  border: 1px solid rgba(250, 250, 250, 0.9);
-}
-
-.order_button:hover a {
+.link_for_order_button:hover,
+.link_for_order_button:focus {
   color: #ed3b44;
+  border-color: rgba(250, 250, 250, 0.9);
 }
 
 @media only screen and (min-width: 320px) and (max-width: 374px) {
@@ -95,8 +83,7 @@
     margin-right: auto;
   }
 
-  .wrapper_for_button_order {
-    display: block;
+  .link_for_order_button {
     margin-left: 15px;
   }
 }
@@ -123,8 +110,7 @@
     padding-bottom: 0;
   }
 
-  .wrapper_for_button_order {
-    display: block;
+  .link_for_order_button {
     margin-left: 0px;
   }
 }
@@ -163,8 +149,7 @@
     padding-bottom: 0;
   }
 
-  .wrapper_for_button_order {
-    display: block;
-    padding-left: 50%;
+  .link_for_order_button {
+    margin-left: 50%;
   }
 }
