@@ -131,17 +131,8 @@
   }
 }
 
-/* .swiper-button-lock {
-  display: block;
-} */
-
-/* Стилі для акордеону */
 .ac-trigger {
   transition: color 0.25s ease;
-  /* position: relative; */
-  /* text-decoration: none; */
-  /* margin: 0;
-  border: 0; */
 }
 &::after {
   content: '';
@@ -149,17 +140,10 @@
 }
 .ac-panel {
   overflow: hidden;
-  /* transition-property: height, visibility; */
   transition-timing-function: ease;
 }
 &.is-active {
   .ac-panel {
     visibility: visible;
   }
-
-  /* & > .ac-header .ac-trigger {
-    &::after {
-      content: '';
-    }
-  } */
 }
