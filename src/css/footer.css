@@ -57,6 +57,12 @@
   border-bottom: 1px solid rgba(250,250,250,0.2);
   color: rgb(250, 250, 250);
   -webkit-box-shadow: inset 0 0 0 50px #1c1d20;
+  -webkit-text-fill-color: rgb(250, 250, 250);
+}
+
+#form-email::placeholder,
+#form-comment::placeholder {
+  -webkit-text-fill-color: rgba(250, 250, 250, 0.2);
 }
 
 #form-email:hover,
@@ -74,6 +80,10 @@ input.entered-text {
 
 input.success {
   border-bottom-color: rgb(60, 188, 129);
+}
+
+input.failure {
+  border-bottom-color: rgb(231, 74, 59);
 }
 
 .footer-send {
