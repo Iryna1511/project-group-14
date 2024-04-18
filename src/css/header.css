@@ -1,3 +1,6 @@
+html{
+  scroll-behavior: smooth;
+}
 .page-header {
   background-color: transparent;
   position: absolute;
