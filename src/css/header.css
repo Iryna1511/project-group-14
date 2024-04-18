@@ -1,3 +1,6 @@
+html{
+  scroll-behavior: smooth;
+}
 .page-header {
   background-color: transparent;
   position: absolute;
@@ -31,6 +34,21 @@
 .logo-navigation .logo img {
   margin-right: 8px;
 }
+.button-down{
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+  cursor: pointer;
+  border: none;
+  width: 30px;
+  height: 30px;
+  border-radius: 60%;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 
 @media screen and (max-width: 767px) {
   .burger-button {
@@ -121,13 +139,31 @@
     justify-content: center;
     white-space: nowrap;
   }
-
+  .button-order:hover,
+  .button-order:focus {
+      background-color: #E0373F;
+  }
   .menu {
     font-weight: 500;
     text-decoration: underline;
     font-size: 16px;
     display: block;
   }
+.button-down{
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  cursor: pointer;
+  border: none;
+  width: 38px;
+  height: 38px;
+  border-radius: 60%;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 }
 
 @media screen and (min-width: 1440px) {
