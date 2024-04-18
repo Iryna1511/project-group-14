@@ -13,12 +13,17 @@ form.addEventListener("submit", async (event) => {
         comment: comment.value,
     };
 
+    // Style support
+    console.log(email.value.indexOf("."), email.value.length);
+    if (email.value.match("@") && (email.value.indexOf(".")===email.value.length-3 || email.value.indexOf(".")===email.value.length-4)) {
+        email.classList.add('success');
+    }
+
   try {
     createRequests(formData);
     modal.classList.add("is-open");
     email.value = '';
     comment.value = '';  
-    console.log(formData);
     localStorage.removeItem(localStorageKey);
   } catch (error) {
     alert('Please fill all fields correctly');
@@ -37,6 +42,13 @@ form.addEventListener("input", (event) => {
         email: email.value.trim(),
         comment: comment.value.trim(),
     }));
+
+    // Style support
+    if (event.target.value !== '') {
+        event.target.classList.add('entered-text');
+    } else {
+        event.target.classList.remove('entered-text');
+    }
 });
 
 
