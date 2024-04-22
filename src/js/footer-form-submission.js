@@ -18,8 +18,8 @@ form.addEventListener("submit", async (event) => {
     modal.classList.add("is-open");
     email.value = '';
     comment.value = '';  
-    console.log(formData);
     localStorage.removeItem(localStorageKey);
+    email.classList.remove('success', 'failure');  
   } catch (error) {
     alert('Please fill all fields correctly');
     console.error('Error:', error.message);
@@ -37,6 +37,24 @@ form.addEventListener("input", (event) => {
         email: email.value.trim(),
         comment: comment.value.trim(),
     }));
+
+    // Style support
+    if (event.target.value !== '') {
+        event.target.classList.add('entered-text');
+    } else {
+        event.target.classList.remove('entered-text');
+    }
+
+    console.log(email.value.indexOf("."), email.value.length);
+    if (email.value.match("@") && (email.value.indexOf(".")===email.value.length-3 || email.value.indexOf(".")===email.value.length-4)) {
+        email.classList.add('success');
+        email.classList.remove('failure');
+    } else if (email.value!== '') {
+        email.classList.remove('success');
+        email.classList.add('failure');
+    } else {
+        email.classList.remove('failure');
+    }
 });
 
 

@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const targetElement = document.getElementById(id);
         if (targetElement) {
           targetElement.scrollIntoView({
-            behavior: 'smooth'
+            behavior: 'smooth',
           });
         }
       }
@@ -38,7 +38,9 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 const menuLinks = document.querySelectorAll('.submenu-link');
 document.querySelector('.navbar-menu').addEventListener('click', function () {
-  menuLinks.forEach(function (link) {
-    link.classList.toggle('is-active');
+  menuLinks.forEach(function (link, index) {
+    setTimeout(function () {
+      link.classList.toggle('is-active');
+    }, 100 * index);
   });
 });
