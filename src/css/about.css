@@ -75,7 +75,7 @@
 
 .css-swiper-skills {
   display: flex;
-  overflow: hidden;
+  overflow: auto;
   justify-content: space-between;
 }
 .css-swiper-wrapper {
@@ -83,6 +83,8 @@
   justify-content: center;
   align-items: center;
   padding: 0px;
+  overflow: scroll;
+  /* max-width: calc(100% - 52px); */
 }
 .css-swiper-slide {
   display: flex !important;
@@ -104,6 +106,7 @@
   background-color: rgb(237, 59, 68);
 }
 .btn-right {
+  border: none;
   opacity: 0.4;
 }
 
